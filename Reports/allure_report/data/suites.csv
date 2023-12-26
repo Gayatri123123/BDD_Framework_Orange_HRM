@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Tue Dec 26 15:22:31 IST 2023","Tue Dec 26 15:22:44 IST 2023","13219","","","","","","Login with multiple parameters -- @1.2 ",""
+"passed","Tue Dec 26 15:22:10 IST 2023","Tue Dec 26 15:22:31 IST 2023","20902","","","","","","Login with multiple parameters -- @1.1 ",""
+"passed","Tue Dec 26 15:21:43 IST 2023","Tue Dec 26 15:22:10 IST 2023","27666","","","","","","Login with valid credentials",""
+"passed","Tue Dec 26 15:22:44 IST 2023","Tue Dec 26 15:23:05 IST 2023","20519","","","","","","Logo presence on OrangeHRM home page",""
