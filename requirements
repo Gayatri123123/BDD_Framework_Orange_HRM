@@ -18,7 +18,7 @@
  behave features\search.feature --tags=search --tags=search1
 
 #To generate allure report
-Install.... allure-behave
+Install package.... allure-behave
 #commands
  behave -f allure_behave.formatter:AllureFormatter -o Reports\allure_result
  allure generate Reports\allure_result -o Reports\allure_report --clean
