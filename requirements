@@ -2,7 +2,7 @@
  behave
  selenium
 
- commands to run TC's
+ #commands to run TC's
  behave features\login.feature
 
  #To run particular Scenario by using tags
@@ -19,7 +19,7 @@
 
 #To generate allure report
 Install.... allure-behave
-commands
+#commands
  behave -f allure_behave.formatter:AllureFormatter -o Reports\allure_result
  allure generate Reports\allure_result -o Reports\allure_report --clean
 
