@@ -1,7 +1,7 @@
 Feature: Login functionality
 
   Background: Common steps
-    Given I lauched chrome browser
+    Given I lauched the browser
     When I open orange HRM Homepage
 
   @Dashboard

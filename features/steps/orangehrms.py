@@ -5,7 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-
 @given('luanch the browser')
 def lanch_browser(context):
     context.driver = webdriver.Chrome()

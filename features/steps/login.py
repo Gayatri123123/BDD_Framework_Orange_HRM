@@ -2,22 +2,24 @@ import time
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+#from common import open_orange_hrm_url
 
 
-@given('I lauched chrome browser')
+@given('I lauched the browser')
 def launch_browser(context):
     context.driver = webdriver.Chrome()
 
 @when(u'I open orange HRM Homepage')
 def launch_orange_hrm_page(context):
+    #open_orange_hrm_url(context)
     context.driver.get("https://opensource-demo.orangehrmlive.com/")
-    context.driver.maximize_window()
     time.sleep(2)
 
-@when(u'Enter username "Admin" and password "admin123"')
-def enter_user_credentail(context,):
-    context.driver.find_element(By.XPATH,"//*[@name='username']").send_keys("Admin")
-    context.driver.find_element(By.XPATH,"//*[@name='password']").send_keys("admin123")
+
+@when(u'Enter username "{username}" and password "{password}"')
+def enter_user_credentail(context,username,password):
+    context.driver.find_element(By.XPATH,"//*[@name='username']").send_keys(username)
+    context.driver.find_element(By.XPATH,"//*[@name='password']").send_keys(password)
 
 @when(u'clicks on Login button')
 def click_on_login_btn(context):
